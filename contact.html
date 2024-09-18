@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            height: 900px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('https://your-background-image-url.jpg') no-repeat center center/cover;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay for better contrast */
+            z-index: -1;
+        }
+
+        .contact-container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            width: 70%; /* Reduced width */
+            height: 800px; /* Reduced height */
+           
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .contact-container h2 {
+            color: #333;
+            text-shadow: none;
+        }
+
+        .box {
+            background: #f0f8ff;
+            border: none;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .box h3 {
+            margin-bottom: 15px;
+            color: #4a90e2;
+        }
+
+        .box textarea, .box input {
+            border-radius: 8px;
+            margin-bottom: 15px;
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ccc;
+            transition: border-color 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .box textarea:focus, .box input:focus {
+            border-color: #4a90e2;
+            outline: none;
+            box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+        }
+
+        .box button {
+            background: linear-gradient(120deg, #4a90e2 0%, #50e3c2 100%);
+            border: none;
+            border-radius: 8px;
+            padding: 12px 20px;
+            cursor: pointer;
+            color: #fff;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.3s ease;
+            width: 100%;
+        }
+
+        .box button:hover {
+            background: linear-gradient(120deg, #50e3c2 0%, #4a90e2 100%);
+            transform: translateY(-2px);
+        }
+
+        .contact-info {
+            text-align: center;
+            color: #333;
+        }
+
+        .contact-info p {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .contact-info a {
+            color: #4a90e2;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            margin: 0 10px;
+        }
+
+        .contact-info a:hover {
+            color: #50e3c2;
+        }
+
+        .social-icons img {
+            width: 35px;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 576px) {
+            h2 {
+                font-size: 2rem;
+            }
+
+            .box h3 {
+                font-size: 1.2rem;
+            }
+
+            .contact-info p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="overlay"></div>
+    
+    <div class="contact-container">
+        <h2>Get in Touch</h2>
+        
+        <div class="box">
+            <h3>Share Your Project Ideas</h3>
+            <textarea placeholder="I’d love to hear your ideas. Share them here..."></textarea>
+            <button>Submit Idea</button>
+        </div>
+
+        <div class="box">
+            <h3>Send Me a Message</h3>
+            <input type="email" placeholder="Your Email Address" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button>Send Message</button>
+        </div>
+
+        <div class="contact-info">
+            <p>Connect with me on:</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/rajarshi.das.52831" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="Facebook">
+                </a>
+                <a href="https://github.com/noobremon" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/rajarshi-das-5923b2291/" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Handle button clicks with form validation (optional enhancement)
+        document.querySelectorAll('.box button').forEach(button => {
+            button.addEventListener('click', function() {
+                // Simple alert, can be replaced with actual form submission
+                alert('Your message has been sent!');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Rajarshi Das</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Roboto:wght@300;400&display=swap');
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+            color: #444;
+            line-height: 1.6;
+            transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #1c3b57;
+            transition: color 0.3s ease-in-out;
+        }
+
+        h1:hover {
+            color: #102a42;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: #fff;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-header {
+            font-size: 1.8rem;
+            background-color: #1c3b57;
+            color: #f8f9fa;
+            border-radius: 12px 12px 0 0;
+            padding: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .card-header:hover {
+            background-color: #102a42;
+        }
+
+        .card-body {
+            padding: 20px;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            border-radius: 0 0 12px 12px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-size: 1rem;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        li::before {
+            content: "•";
+            color: #007bff;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            transition: color 0.3s ease;
+        }
+
+        li:hover::before {
+            color: #0056b3;
+        }
+
+        .resume-link {
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .resume-link p {
+            margin: 0;
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.2rem;
+            color: #444;
+        }
+
+        .resume-link a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            background-color: #007bff;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin-top: 10px;
+        }
+
+        .resume-link a:hover {
+            background-color: #0056b3;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+            text-decoration: none;
+        }
+
+        .resume-link a:focus {
+            outline: none;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><b>About Me</b></h1>
+
+        <div class="card">
+            <div class="card-header">Educational Background</div>
+            <div class="card-body">
+                <ul>
+                    <li><strong>Secondary Education:</strong> Aditya Academy Sr. Secondary with a percentage of 90% marks</li>
+                    <li><strong>Higher-Secondary Education:</strong> Aditya Academy Sr. Secondary with a percentage of 81% marks</li>
+                    <li><strong>Current:</strong> 2nd Year Front-End Developer at RCC Institute of Information Technology</li>
+                    <li><strong>Course:</strong> Computer Science and Engineering</li>
+                    <li><strong>Skills:</strong> HTML, CSS, JavaScript, Bootstrap, Responsive Web Design, Python, C, C++, Figma</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Hobbies</div>
+            <div class="card-body">
+                <ul>
+                    <li>Coding and building web projects</li>
+                    <li>Graphic Design and UI/UX Design</li>
+                    <li>Gaming and playing Football</li>
+                    <li>Reading tech blogs and watching coding tutorials</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Strengths</div>
+            <div class="card-body">
+                <ul>
+                    <li>Creative problem-solving and critical thinking</li>
+                    <li>Strong understanding of web development fundamentals</li>
+                    <li>Team player</li>
+                    <li>Passion for learning and adapting to new technologies</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="resume-link">
+            <p>Check out my full</p>
+            <p><a href="resume.html">Resume</a></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
